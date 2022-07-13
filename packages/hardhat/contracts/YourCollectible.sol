@@ -20,7 +20,7 @@ contract YourCollectible is
     constructor() ERC721("YourCollectible", "YCB") {}
 
     function _baseURI() internal pure override returns (string memory) {
-        return "https://ipfs.infura.io";
+        return "https://ipfs.io/ipfs/";
     }
 
     function mintItem(address to, string memory uri) public returns (uint256) {

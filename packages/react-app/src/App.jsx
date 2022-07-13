@@ -63,18 +63,22 @@ const NETWORKCHECK = true;
 
 // EXAMPLE STARTING JSON:
 const STARTING_JSON = {
-  description: "It's actually a bison?",
-  external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-  image: "https://austingriffith.com/images/paintings/buffalo.jpg",
-  name: "Buffalo",
+  description: "A regular soccerball",
+  external_url: "https://unsplash.com/photos/dKCKiC0BQtU",  // "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
+  image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",  // "https://austingriffith.com/images/paintings/buffalo.jpg",
+  name: "Soccerball",
   attributes: [
     {
-      trait_type: "BackgroundColor",
-      value: "green",
+      trait_type: "Popularity",
+      value: "Globally",
     },
     {
-      trait_type: "Eyes",
-      value: "googly",
+      trait_type: "Background",
+      value: "Grass",
+    },
+    {
+      trait_type: "Relevance",
+      value: 50,
     },
   ],
 };
@@ -519,125 +523,125 @@ function App(props) {
   // the json for the nfts
   const json = {
     1: {
-      description: "It's actually a bison?",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/buffalo.jpg",
-      name: "Buffalo",
+      description: "A regular soccerball",
+      external_url: "https://unsplash.com/photos/dKCKiC0BQtU",  // "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
+      image: "https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",  // "https://austingriffith.com/images/paintings/buffalo.jpg",
+      name: "Soccerball",
       attributes: [
         {
-          trait_type: "BackgroundColor",
-          value: "green",
+          trait_type: "Popularity",
+          value: "Globally",
         },
         {
-          trait_type: "Eyes",
-          value: "googly",
+          trait_type: "Background",
+          value: "Grass",
         },
         {
-          trait_type: "Stamina",
-          value: 42,
+          trait_type: "Relevance",
+          value: 50,
         },
       ],
     },
     2: {
-      description: "What is it so worried about?",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/zebra.jpg",
-      name: "Zebra",
+      description: "A regular volleyball",
+      external_url: "https://unsplash.com/photos/xhC8IzemTGU", // <-- this can link to a page for the specific file too
+      image: "https://images.unsplash.com/photo-1497939902741-848a16f92f9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      name: "Volleyball",
       attributes: [
         {
-          trait_type: "BackgroundColor",
-          value: "blue",
+          trait_type: "Popularity",
+          value: "Globally",
         },
         {
-          trait_type: "Eyes",
-          value: "googly",
+          trait_type: "Background",
+          value: "Water",
         },
         {
-          trait_type: "Stamina",
-          value: 38,
+          trait_type: "Relevance",
+          value: 40,
         },
       ],
     },
     3: {
-      description: "What a horn!",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/rhino.jpg",
-      name: "Rhino",
+      description: "A regular basketball",
+      external_url: "https://unsplash.com/photos/mu7amBMAT3E", // <-- this can link to a page for the specific file too
+      image: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      name: "Basketball",
       attributes: [
         {
-          trait_type: "BackgroundColor",
-          value: "pink",
+          trait_type: "Popularity",
+          value: "Globally",
         },
         {
-          trait_type: "Eyes",
-          value: "googly",
+          trait_type: "Background",
+          value: "Leaves",
         },
         {
-          trait_type: "Stamina",
-          value: 22,
+          trait_type: "Relevance",
+          value: 47,
         },
       ],
     },
     4: {
-      description: "Is that an underbyte?",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/fish.jpg",
-      name: "Fish",
+      description: "A regular golfball",
+      external_url: "https://unsplash.com/photos/PgInf7vCphw", // <-- this can link to a page for the specific file too
+      image: "https://images.unsplash.com/photo-1628312816665-2a021103ca66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      name: "Golfball",
       attributes: [
         {
-          trait_type: "BackgroundColor",
-          value: "blue",
+          trait_type: "Popularity",
+          value: "Pastime",
         },
         {
-          trait_type: "Eyes",
-          value: "googly",
+          trait_type: "Background",
+          value: "Grass",
         },
         {
-          trait_type: "Stamina",
-          value: 15,
+          trait_type: "Relevance",
+          value: 27,
         },
       ],
     },
     5: {
-      description: "So delicate.",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/flamingo.jpg",
-      name: "Flamingo",
+      description: "A rare discgolf basket",
+      external_url: "https://unsplash.com/photos/fuNrB1GjYOE", // <-- this can link to a page for the specific file too
+      image: "https://images.unsplash.com/photo-1645212256221-484e3bfbc713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8",
+      name: "DiscgolfBasket",
       attributes: [
         {
-          trait_type: "BackgroundColor",
-          value: "black",
+          trait_type: "Popularity",
+          value: "Niche",
         },
         {
-          trait_type: "Eyes",
-          value: "googly",
+          trait_type: "Background",
+          value: "Grass",
         },
         {
-          trait_type: "Stamina",
-          value: 6,
+          trait_type: "Relevance",
+          value: 7,
         },
       ],
     },
-    6: {
-      description: "Raaaar!",
-      external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-      image: "https://austingriffith.com/images/paintings/godzilla.jpg",
-      name: "Godzilla",
-      attributes: [
-        {
-          trait_type: "BackgroundColor",
-          value: "orange",
-        },
-        {
-          trait_type: "Eyes",
-          value: "googly",
-        },
-        {
-          trait_type: "Stamina",
-          value: 99,
-        },
-      ],
-    },
+    // 6: {
+    //   description: "Raaaar!",
+    //   external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
+    //   image: "https://austingriffith.com/images/paintings/godzilla.jpg",
+    //   name: "Godzilla",
+    //   attributes: [
+    //     {
+    //       trait_type: "BackgroundColor",
+    //       value: "orange",
+    //     },
+    //     {
+    //       trait_type: "Eyes",
+    //       value: "googly",
+    //     },
+    //     {
+    //       trait_type: "Stamina",
+    //       value: 99,
+    //     },
+    //   ],
+    // },
   };
 
   const mintItem = async () => {
