@@ -23,121 +23,121 @@ const main = async () => {
   const { deployer } = await getNamedAccounts();
   const yourCollectible = await ethers.getContract("YourCollectible", deployer);
 
-  const buffalo = {
-    description: "It's actually a bison?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/buffalo.jpg",
-    name: "Buffalo",
+  const soccerball = {
+    description: "A regular soccerball",
+    external_url: "https://unsplash.com/photos/dKCKiC0BQtU",  // "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
+    image: __dirname + "/images/soccerball.jpg",  // "https://austingriffith.com/images/paintings/buffalo.jpg",
+    name: "Soccerball",
     attributes: [
       {
-        trait_type: "BackgroundColor",
-        value: "green",
+        trait_type: "Popularity",
+        value: "Globally",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "Background",
+        value: "Grass",
       },
       {
-        trait_type: "Stamina",
-        value: 42,
+        trait_type: "Relevance",
+        value: 50,
       },
     ],
   };
-  console.log("Uploading buffalo...");
-  const uploaded = await ipfs.add(JSON.stringify(buffalo));
+  console.log("Uploading soccerball...");
+  const uploaded = await ipfs.add(JSON.stringify(soccerball));
 
-  console.log("Minting buffalo with IPFS hash (" + uploaded.path + ")");
+  console.log("Minting soccerball with IPFS hash (" + uploaded.path + ")");
   await yourCollectible.mintItem(toAddress, uploaded.path, {
     gasLimit: 400000,
   });
 
   await sleep(delayMS);
 
-  const zebra = {
-    description: "What is it so worried about?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/zebra.jpg",
-    name: "Zebra",
+  const volleyball = {
+    description: "A regular volleyball",
+    external_url: "https://unsplash.com/photos/xhC8IzemTGU", // <-- this can link to a page for the specific file too
+    image: __dirname + "/images/volleyball.jpg",
+    name: "Volleyball",
     attributes: [
       {
-        trait_type: "BackgroundColor",
-        value: "blue",
+        trait_type: "Popularity",
+        value: "Globally",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "Background",
+        value: "Water",
       },
       {
-        trait_type: "Stamina",
-        value: 38,
+        trait_type: "Relevance",
+        value: 40,
       },
     ],
   };
-  console.log("Uploading zebra...");
-  const uploadedzebra = await ipfs.add(JSON.stringify(zebra));
+  console.log("Uploading volleyball...");
+  const uploadedvolleyball = await ipfs.add(JSON.stringify(volleyball));
 
-  console.log("Minting zebra with IPFS hash (" + uploadedzebra.path + ")");
-  await yourCollectible.mintItem(toAddress, uploadedzebra.path, {
+  console.log("Minting volleyball with IPFS hash (" + uploadedvolleyball.path + ")");
+  await yourCollectible.mintItem(toAddress, uploadedvolleyball.path, {
     gasLimit: 400000,
   });
 
   await sleep(delayMS);
 
-  const rhino = {
-    description: "What a horn!",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/rhino.jpg",
-    name: "Rhino",
+  const basketball = {
+    description: "A regular basketball",
+    external_url: "https://unsplash.com/photos/mu7amBMAT3E", // <-- this can link to a page for the specific file too
+    image: __dirname + "/images/basketball.jpg",
+    name: "Basketball",
     attributes: [
       {
-        trait_type: "BackgroundColor",
-        value: "pink",
+        trait_type: "Popularity",
+        value: "Globally",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "Background",
+        value: "Leaves",
       },
       {
-        trait_type: "Stamina",
-        value: 22,
+        trait_type: "Relevance",
+        value: 47,
       },
     ],
   };
-  console.log("Uploading rhino...");
-  const uploadedrhino = await ipfs.add(JSON.stringify(rhino));
+  console.log("Uploading basketball...");
+  const uploadedbasketball = await ipfs.add(JSON.stringify(basketball));
 
-  console.log("Minting rhino with IPFS hash (" + uploadedrhino.path + ")");
-  await yourCollectible.mintItem(toAddress, uploadedrhino.path, {
+  console.log("Minting basketball with IPFS hash (" + uploadedbasketball.path + ")");
+  await yourCollectible.mintItem(toAddress, uploadedbasketball.path, {
     gasLimit: 400000,
   });
 
   await sleep(delayMS);
 
-  const fish = {
-    description: "Is that an underbyte?",
-    external_url: "https://austingriffith.com/portfolio/paintings/", // <-- this can link to a page for the specific file too
-    image: "https://austingriffith.com/images/paintings/fish.jpg",
-    name: "Fish",
+  const golfball = {
+    description: "A regular golfball",
+    external_url: "https://unsplash.com/photos/PgInf7vCphw", // <-- this can link to a page for the specific file too
+    image: __dirname + "/images/golfball.jpg",
+    name: "Golfball",
     attributes: [
       {
-        trait_type: "BackgroundColor",
-        value: "blue",
+        trait_type: "Popularity",
+        value: "Pastime",
       },
       {
-        trait_type: "Eyes",
-        value: "googly",
+        trait_type: "Background",
+        value: "Grass",
       },
       {
-        trait_type: "Stamina",
-        value: 15,
+        trait_type: "Relevance",
+        value: 27,
       },
     ],
   };
-  console.log("Uploading fish...");
-  const uploadedfish = await ipfs.add(JSON.stringify(fish));
+  console.log("Uploading golfball...");
+  const uploadedgolfball = await ipfs.add(JSON.stringify(golfball));
 
-  console.log("Minting fish with IPFS hash (" + uploadedfish.path + ")");
-  await yourCollectible.mintItem(toAddress, uploadedfish.path, {
+  console.log("Minting golfball with IPFS hash (" + uploadedgolfball.path + ")");
+  await yourCollectible.mintItem(toAddress, uploadedgolfball.path, {
     gasLimit: 400000,
   });
 
@@ -151,6 +151,43 @@ const main = async () => {
 
   await sleep(delayMS);
 
+  const discgolf = {
+    description: "A rare discgolf basket",
+    external_url: "https://unsplash.com/photos/fuNrB1GjYOE", // <-- this can link to a page for the specific file too
+    image: __dirname + "/images/discgolf.jpg",
+    name: "DiscgolfBasket",
+    attributes: [
+      {
+        trait_type: "Popularity",
+        value: "Niche",
+      },
+      {
+        trait_type: "Background",
+        value: "Grass",
+      },
+      {
+        trait_type: "Relevance",
+        value: 7,
+      },
+    ],
+  };
+  console.log("Uploading discgolf...");
+  const uploadeddiscgolf = await ipfs.add(JSON.stringify(discgolf));
+
+  console.log("Minting discgolf with IPFS hash (" + uploadeddiscgolf.path + ")");
+  await yourCollectible.mintItem(toAddress, uploadeddiscgolf.path, {
+    gasLimit: 400000,
+  });
+
+  await sleep(delayMS);
+
+  console.log(
+    "Transferring Ownership of YourCollectible to " + toAddress + "..."
+  );
+
+  await yourCollectible.transferOwnership(toAddress, { gasLimit: 400000 });
+
+  await sleep(delayMS);
   /*
 
 
